@@ -1,0 +1,6 @@
+setenv LANG ko_KR.UTF-8
+setenv LC_ALL ko_KR.UTF-8
+
+setenv XMODIFIERS @im=fcitx
+setenv GTK_IM_MODULE fcitx/xim
+setenv QT_IM_MODULE fcitx
