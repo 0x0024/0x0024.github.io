@@ -1,0 +1,20 @@
+대부분은 아래에 설명된 내용데로 하면 된다
+https://ko.linux-terminal.com/?p=7927
+
+위 내용에서 바뀌는 부분
+"pkg-static install -f pkg" => "pkg bootstrap -f"
+
+그리고 업그레이드 후 반드시 수정해야 할 부분
+/etc/sysctl.conf
+"vfs.zfs.min_auto_ashift=12" => "vfs.zfs.vdev.min_auto_ashift=12"
+
+KDE Plasma 설치 스크립트
+https://gitlab.com/alfix/kde-installer-dialogs
+
+root 비밀번호 삭제
+
+# vipw 실행 후 편집
+root:ENCRYPTED_PASSWORD_HASH:0:0::0:0:.........
+root::0:0::0:0:.........
+
+# pwd_mkdb -p /etc/master.passwd
